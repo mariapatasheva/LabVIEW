@@ -178,6 +178,48 @@ void loop()
           delay(250);
           digitalWrite(12, LOW);
           }
+      else if (ard == "Anode")
+         {
+          Serial.print("Anode");
+          digitalWrite(3, HIGH);
+          delay(250);
+          digitalWrite(2, HIGH);
+          delay(250);
+          digitalWrite(4, HIGH);
+          delay(250);
+          digitalWrite(5, HIGH);
+          delay(250);
+          digitalWrite(6, HIGH);
+          delay(250);
+          digitalWrite(7, HIGH);
+          delay(250);
+          digitalWrite(9, HIGH);
+          delay(250);
+          digitalWrite(10, HIGH);
+          delay(250);
+          digitalWrite(12, HIGH);
+          }  
+      else if (ard == "Cathode")
+        {
+          Serial.print("Cathode");
+          digitalWrite(3, LOW);
+          delay(250);
+          digitalWrite(2, HIGH);
+          delay(250);
+          digitalWrite(4, HIGH);
+          delay(250);
+          digitalWrite(5, HIGH);
+          delay(250);
+          digitalWrite(6, HIGH);
+          delay(250);
+          digitalWrite(7, HIGH);
+          delay(250);
+          digitalWrite(9, HIGH);
+          delay(250);
+          digitalWrite(10, HIGH);
+          delay(250);
+          digitalWrite(12, HIGH);
+        } 
 	    else 
         {
           Serial.print("Wrong command");
